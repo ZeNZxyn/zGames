@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zen</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  .logo-button {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    width: min(22vw, 22vh);
+    max-width: 220px;
+    min-width: 80px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  .logo-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: transparent;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  }
+
+  .logo-button:hover {
+    transform: translateX(-50%) scale(1.08);
+    filter: drop-shadow(0 0 18px rgba(255,255,255,0.6));
+  }
+
+  .logo-button:active {
+    transform: translateX(-50%) scale(0.95);
+  }
+</style>
+</head>
+<body>
+
+  <img class="bg" src="https://raw.githubusercontent.com/ZeNZxyn/Zen-HtmlXD/refs/heads/main/ZenCover.jpg" alt="Background">
+
+  <button class="logo-button" onclick="window.location.reload()">
+    <img src="https://raw.githubusercontent.com/ZeNZxyn/Zen-HtmlXD/refs/heads/main/Games%20Logo.png" alt="Zen Logo Button">
+  </button>
+
+</body>
+</html>
